@@ -10,9 +10,9 @@ export default () => {
       defaultSelectedKeys={['1']}
       style={{ lineHeight: '64px' }}
     >
-      {menuList.map(i => (
+      {menuList.map(info => (
         menuItem({
-          info: i,
+          info
         })
       ))}
     </Menu>

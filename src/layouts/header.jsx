@@ -3,6 +3,8 @@ import { Layout, Icon } from 'antd';
 import RightContent from './rightCentent';
 import BaseMenu from './menu/baseMenu';
 import styles from './header.module.css';
+import { DndProvider } from 'react-dnd';
+import HTMLBackend from 'react-dnd-html5-backend'
 const { Header } = Layout;
 export default () => {
 
@@ -13,7 +15,9 @@ export default () => {
         <span>react-dnd-demo</span>
       </div>
       <div className={styles.headerContent}>
+        <DndProvider backend={HTMLBackend}>
           <BaseMenu />
+        </DndProvider>
       </div>
       <div className={styles.right}>
         <RightContent />
