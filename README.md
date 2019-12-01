@@ -4,8 +4,8 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 React Hooks Library.
 
 ### In the project directory, you can run:
-yarn start
-yarn test
+yarn start<br />
+yarn test<br />
 yarn eject
 
 ### `yarn start`
