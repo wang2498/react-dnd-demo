@@ -1,0 +1,12 @@
+.left {
+  float: left;
+  font-size:18px;
+  color:#fff;
+}
+.headerContent {
+  float: left;
+  margin: 0 150px 0 160px;
+}
+.right {
+  float: right;
+}
