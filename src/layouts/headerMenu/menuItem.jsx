@@ -17,7 +17,6 @@ export default ({ info, info: { id }, moveMenu, findMenu }) => {
     canDrop: () => false,
     hover({ id: draggedId }) {
       if (draggedId !== id) {
-        console.log(draggedId, id)
         const { index: overIndex } = findMenu(id)
         moveMenu(draggedId, overIndex)
       }
@@ -33,7 +32,7 @@ export default ({ info, info: { id }, moveMenu, findMenu }) => {
     <Item
       key={info.key}
       ref={ref => ref && ref.node && drag(drop(ref.node))}
-      style={{  ...dropItemStyle }}
+      style={{ ...dropItemStyle }}
     >
       <Link to={info.path}>{info.title}</Link>
     </Item>
